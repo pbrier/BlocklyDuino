@@ -1,7 +1,9 @@
-### Welcome to BlocklyDuino.
+### Welcome to BlocklyMBED.
 BlocklyMBed is a a web-based visual programming editor for [Mbed](http://www.mbed.org/).
 
-BlocklyMbed is based on [Blockly](http://code.google.com/p/blockly/), the web-based, graphical programming editor and BlocklyDuino. Provide static type language blocks and code generators for mbed programming.
+BlocklyMbed is based on [Blockly](http://code.google.com/p/blockly/), the web-based, graphical programming editor 
+and [BlocklyDuino](https://github.com/gasolin/BlocklyDuino). 
+BlocklyMBED Provides static type language blocks and code generators for mbed programming.
 
 
 [BlocklyDuino has a Google+ Page](https://plus.google.com/111979846292233941175).
