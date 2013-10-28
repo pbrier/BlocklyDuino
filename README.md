@@ -1,29 +1,22 @@
 ### Welcome to BlocklyDuino.
-BlocklyDuino is a web-based visual programming editor for [Arduino](http://www.arduino.cc/).
+BlocklyMBed is a a web-based visual programming editor for [Mbed](http://www.mbed.org/).
 
-BlocklyDuino is based on [Blockly](http://code.google.com/p/blockly/), the web-based, graphical programming editor. Provide static type language blocks and code generators for arduino programming.
+BlocklyMbed is based on [Blockly](http://code.google.com/p/blockly/), the web-based, graphical programming editor and BlocklyDuino. Provide static type language blocks and code generators for mbed programming.
 
-BlocklyDuino also support [Grove](http://www.seeedstudio.com/wiki/GROVE_System) blocks to easily get started with microcontroller-based experimentation and learning.
 
-[We also have Google+ Page](https://plus.google.com/111979846292233941175).
+[BlocklyDuino has a Google+ Page](https://plus.google.com/111979846292233941175).
 
 ### Features
 
-* Programming Arduino with visually drag and drop code blocks
-* Generate fully compatible arduino source code
-* Interacive Arduino board with 10+ predefined Grove sensor blocks
+* Programming MBED with visually drag and drop code blocks
+* Generate fully compatible mbed source code
+* Compile+link the source and provide a binary for download
 * Load different on-site examples with url parameters
 
 ### Demo
 
-BlocklyDuino is a web tool. You can give it a try at
-[Web](http://www.gasolin.idv.tw/public/blockly/demos/blocklyduino/index.html) to see the working BlocklyDuino.
-
-You can link directly to examples
-* [demo 1](http://www.gasolin.idv.tw/public/blockly/demos/blocklyduino/index.html?url=/public/blockly/demos/blocklyduino/examples/blink.xml)
-* [demo 2](http://www.gasolin.idv.tw/public/blockly/demos/blocklyduino/index.html?url=/public/blockly/demos/blocklyduino/examples/servo_potentio.xml)
-
-Or watch the [video demo](http://www.youtube.com/watch?v=_swiyXcUvNY)
+BlocklyMbed is a web tool. You can give it a try at
+[Web](http://compiler.kekbot.org) to see the working BlocklyMbed.
 
 ### Run locally on your web browser
 
@@ -42,7 +35,8 @@ The preffered way is to put the BlocklyDuino/web folder into a web server and op
 Check changelog [here](https://github.com/gasolin/BlocklyDuino/blob/master/CHANGELOG.txt)
 
 ### Authors and Contributors
-Fred Lin (@gasolin) .
+Fred Lin (@gasolin) Made the original BlocklyDuino
+Peter Brier & Anton Smeenk added the MBED and compiler functions
 
 Thanks Neil Fraser, Q.Neutron from Blockly http://code.google.com/p/blockly/
 Thanks Arduino and Seeeduino guys for Arduino and Grove blocks.
@@ -51,6 +45,7 @@ The project is also inspired by arduiblock https://github.com/taweili/ardublock 
 
 ### License
 
+Copyright (C) 2013 blockly@pbrier.nl
 Copyright (C) 2012 Fred Lin gasolin+blockly@gmail.com
 
  * Licensed under the Apache License, Version 2.0 (the "License");
