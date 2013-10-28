@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BlocklyMBED plain compiler</title> 
+</head>
+
+<body>
+<form action="http://compiler.kekbot.org/blockly/compiler/compiler.py/compile " method="post">
+  <input type="submit" value="COMPILE">
+ <a href="https://github.com/pbrier/BlocklyDuino">BlocklyMBED</a> Source:
+  <br> <textarea  name="source" rows=40 cols=80>
+
+DigitalOut led1(LED1);
+
+void setup()
+{
+
+}
+
+void loop()
+{
+
+  led1 = HIGH;
+  wait_ms(1000);
+  led1 = LOW;
+  wait_ms(1000);
+}
+
+ 
+ </textarea>
+<br>
+  <!-- Source: <input type="text" name="source"> -->
+  <input type="submit" value="COMPILE">
+</form>
+
+</body>
+
+</html> 
