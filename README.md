@@ -26,11 +26,30 @@ If you want to install it locally. Get code from github and open blockly/demos/b
 
 The preffered way is to put the BlocklyDuino/web folder into a web server and open the url like localhost/public/blockly/demos/blocklyduino/index.html for use.
 
-### Usage (3 Step)
 
-1. Open browser to BlocklyDuino, Drag and Drop blocks to make arduino program. 
-2. Select 'Arduino' tab to copy source code to Arduino IDE
-3. press 'upload' button to burn the code into arduino
+### Setting up the online compiler
+
+You need a GCC_ARM compiler, mbed library sources installed. [See here](https://github.com/mbedmicro)
+Next: configure the paths to your compiler and www folder, in the files compiler/compile.cmd and compiler/compile.py
+You also need mod_python setup in Apache. See the compiler/blocklyserver.apache.conf file for an example of such a configuration.
+Modyfy the file to set the correct path to the location of your compiler.py script, and install the apache configuration file
+ in the appropriate apache directory and restart your server.
+
+
+### Usage (3 Step, not using the compiler function)
+
+1. Open browser to BlocklyDuino, Drag and Drop blocks to make your program. 
+2. Select 'MBED' tab to copy source code to the MBED online compiler, or local file 
+3. Compile the code with your local or online compiler and copy the resulting binary to the MBED / LPC hardware
+
+### Usage (2 Step, Using the compiler)
+
+1. Open browser to BlocklyDuino, Drag and Drop blocks to make your program. 
+3. Press the "Compile" button and copy the resulting binary to the MBED / LPC hardware
+
+Note: directly saving on your bare LPC hardware may not work directly under Mac/Linux. You may have to use "dd" with the correct options.
+
+  dd if=firmware.bin of=/media/pbrier/CRP\ DISABLD/firmware.bin conv=nocreat,notrunc
 
 ### ChangeLog
 
